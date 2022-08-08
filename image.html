@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Anjali Loves krishna</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Anjali Loves Krishna" />
+		<meta name="keywords" content="anjaliloveskrishna, krishnalovesanjali, anjaliwedskrishna, krishnawedsanjali" />
+		<meta name="author" content="https://orangictech.com.np" />
+	
+	  
+	
+		  <!-- Facebook and Twitter integration -->
+		<meta property="og:title" content=""/>
+		<meta property="og:image" content=""/>
+		<meta property="og:url" content=""/>
+		<meta property="og:site_name" content="Anjali Loves Krishna"/>
+		<meta property="og:description" content="Anjali Loves Krishna"/>
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:url" content="" />
+		<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+	
+	<link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="assets/css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="assets/css/superfish.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	
+	<link rel="stylesheet" href="assets/css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="assets/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	
+
+	<script
+	    src="https://code.jquery.com/jquery-3.3.1.js"
+	    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	    crossorigin="anonymous">
+	</script>
+	<script> 
+	$(function(){
+	  $("#fh5co-header-section").load("header.html"); 
+	  $("#footer").load("footer.html"); 
+	});
+	</script> 
+
+	</head>
+	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+
+		<header id="fh5co-header-section" class="sticky-banner">
+		</header>
+
+		<!-- end:header-top -->
+
+		<div id="fh5co-groom-bride">
+			<div class="container">
+				<div class="row padding">
+					<div class="couple-wrap" style="margin:11rem 0 1rem 0;">
+						<div class="col-md-12 nopadding animate-box">
+							<img id="imageid" src="#" style="width: 100%;" class="img-responsive" alt="anjaliloveskrishna.github.io">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<footer>
+			<div id="footer">
+			</div>
+		</footer>
+
+	
+
+	</div>
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+	<script type="text/javascript">
+
+		var url_string = window.location.href; // www.test.com?filename=test
+		var url = new URL(url_string);
+		var chapter = url.searchParams.get("chapter");
+		var image_id = url.searchParams.get("image");
+		var image = 'assets/images/'+chapter+'/'+chapter+image_id+'.jpg';
+		
+		document.querySelector('meta[property="og:title"]').setAttribute("content", chapter);
+		document.querySelector('meta[name="twitter:title"]').setAttribute("content", chapter);
+		document.querySelector('meta[property="og:image"]').setAttribute("content", image);
+		document.querySelector('meta[name="twitter:image"]').setAttribute("content", image);
+
+		document.getElementById("imageid").src=image;
+
+
+	</script>
+
+	<script src="assets/js/scripts.min.js"></script>
+	
+	</body>
+</html>
+

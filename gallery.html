@@ -15,7 +15,7 @@
 	
 	  
 	
-		  <!-- Facebook and Twitter integration -->
+		<!-- Facebook and Twitter integration -->
 		<meta property="og:title" content=""/>
 		<meta property="og:image" content=""/>
 		<meta property="og:url" content=""/>
@@ -97,38 +97,22 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h2>Wedding Gallery Coming Soon</h2>
+						<h2>Engagement</h2>
 					</div>
 				</div>
-				<!-- <div class="row">
-					<div class="col-md-4">
-						<div class="gallery animate-box">
-							<a class="gallery-img image-popup image-popup" href="assets/images/gallery-1.jpg"><img src="assets/images/gallery-1.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-						</div>
-						<div class="gallery animate-box">
-							<a class="gallery-img image-popup" href="assets/images/gallery-7.jpg"><img src="assets/images/gallery-7.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-						</div>
+				<div class="row" id="engagement">
+				</div>
+			</div>
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+						<h2>Wedding</h2>
 					</div>
-					<div class="col-md-4">
-						<div class="gallery animate-box">
-							<a class="gallery-img image-popup" href="assets/images/gallery-6.jpg"><img src="assets/images/gallery-6.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-						</div>
-						<div class="gallery animate-box">
-							<a class="gallery-img image-popup" href="assets/images/gallery-2.jpg"><img src="assets/images/gallery-2.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-						</div>
-						<div class="gallery animate-box">
-							<a class="gallery-img image-popup" href="assets/images/gallery-5.jpg"><img src="assets/images/gallery-5.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="gallery animate-box">
-							<a class="gallery-img image-popup" href="assets/images/gallery-3.jpg"><img src="assets/images/gallery-3.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-						</div>
-						<div class="gallery animate-box">
-							<a class="gallery-img image-popup" href="assets/images/gallery-4.jpg"><img src="assets/images/gallery-4.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-						</div>
-					</div>
-				</div> -->
+				</div>
+				<div class="row" id="wedding">
+				</div>
+
 			</div>
 		</div>
 		
@@ -182,6 +166,34 @@
 	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script> -->
 	<!-- jQuery -->
 	<script src="assets/js/scripts.min.js"></script>
+	<script type="text/javascript">
+
+		var folders = {};
+		folders["engagement"] = 6;
+		folders["wedding"] = 9;
+		
+
+
+
+
+
+
+
+		for (var folder in folders) {
+			imageCount = 0;
+
+			imageCount = folders[folder];
+
+			var content = '';
+			for (let index = 1; index <= imageCount; index++) {
+				content = '<div class="col-md-4"><div class="gallery animate-box">';
+				content += '<a class="gallery-img image-popup" href="assets/images/'+folder+'/'+folder+index+'.jpg"><img src="assets/images/'+folder+'/'+folder+index+'.jpg" class="img-responsive" alt="anjaliloveskrishna.github.io"></a>';	
+				content += '</div></div>';
+				$('#'+folder).append(content);
+			}
+		}
+		
+	</script>
 	</body>
 </html>
 
