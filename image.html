@@ -51,7 +51,7 @@
 		var url = new URL(url_string);
 		var chapter = url.searchParams.get("chapter");
 		var image_id = url.searchParams.get("image");
-		var image = 'assets/images/'+chapter+'/'+chapter+image_id+'.jpg';
+		var image = 'https://anjaliloveskrishna.github.io/assets/images/'+chapter+'/'+chapter+image_id+'.jpg';
 		
 		document.querySelector('meta[property="og:title"]').setAttribute("content", chapter);
 		document.querySelector('meta[name="twitter:title"]').setAttribute("content", chapter);
