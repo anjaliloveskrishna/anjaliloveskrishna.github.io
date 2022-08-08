@@ -45,6 +45,21 @@
 	
 	<link rel="stylesheet" href="assets/css/style.css">
 
+	<script type="text/javascript">
+
+		var url_string = window.location.href; // www.test.com?filename=test
+		var url = new URL(url_string);
+		var chapter = url.searchParams.get("chapter");
+		var image_id = url.searchParams.get("image");
+		var image = 'assets/images/'+chapter+'/'+chapter+image_id+'.jpg';
+		
+		document.querySelector('meta[property="og:title"]').setAttribute("content", chapter);
+		document.querySelector('meta[name="twitter:title"]').setAttribute("content", chapter);
+		document.querySelector('meta[property="og:image"]').setAttribute("content", image);
+		document.querySelector('meta[name="twitter:image"]').setAttribute("content", image);
+
+	</script>
+
 
 	<!-- Modernizr JS -->
 	<script src="assets/js/modernizr-2.6.2.min.js"></script>
@@ -104,21 +119,7 @@
 	</div>
 	<!-- END fh5co-wrapper -->
 	<script type="text/javascript">
-
-		var url_string = window.location.href; // www.test.com?filename=test
-		var url = new URL(url_string);
-		var chapter = url.searchParams.get("chapter");
-		var image_id = url.searchParams.get("image");
-		var image = 'assets/images/'+chapter+'/'+chapter+image_id+'.jpg';
-		
-		document.querySelector('meta[property="og:title"]').setAttribute("content", chapter);
-		document.querySelector('meta[name="twitter:title"]').setAttribute("content", chapter);
-		document.querySelector('meta[property="og:image"]').setAttribute("content", image);
-		document.querySelector('meta[name="twitter:image"]').setAttribute("content", image);
-
 		document.getElementById("imageid").src=image;
-
-
 	</script>
 
 	<script src="assets/js/scripts.min.js"></script>
