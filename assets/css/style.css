@@ -773,11 +773,11 @@ figure {
 }
 
 .groom-men img {
-  margin-bottom: 20px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+  margin: auto;
 }
 
 .groom-men h3 {
