@@ -1,6 +1,6 @@
 # anjaliloveskrishna.github.io
-- 👋 Hi, I’m @anjaliloveskrishna
-- 👀 I’m interested in making different types od delicious food
+- 👋 Hi, I’m Anjali Krishna Mandal
+- 👀 I’m interested in making different types of delicious food
 - 🌱 I’m currently learning computer
 - 💞️ I love my husband( Er. Krishna Kumar Mandal )
 - 📫 to know more about me visit our website
