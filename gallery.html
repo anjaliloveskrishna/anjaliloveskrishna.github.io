@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -59,10 +58,9 @@
 	    crossorigin="anonymous">
 	</script>
 	<script> 
-	$(function(){
-	  $("#fh5co-header-section").load("header.html"); 
-	  $("#footer").load("footer.html"); 
-	});
+		$(function(){
+			$("#footer").load("footer.html"); 
+		});
 	</script> 
 
 	</head>
@@ -78,7 +76,6 @@
 						<div class="container">
 							<div class="col-md-10 col-md-offset-1">
 								<div class="animate-box">
-									<!-- <h1>Nuptial</h1> -->
 									<h2>Our Gallery</h2>
 								</div>
 							</div>
@@ -89,11 +86,38 @@
 		</div>
 
 		<header id="fh5co-header-section" class="sticky-banner">
+			<div class="container">
+				<div class="nav-header">
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+					<h1 id="fh5co-logo"><a href="index.html">AnjaliLovesKrishna</a></h1>
+					<!-- START #fh5co-menu-wrap -->
+					<nav id="fh5co-menu-wrap" role="navigation">
+						<ul class="sf-menu" id="fh5co-primary-menu">
+							<li><a href="index.html" >Home</a></li>
+							<!-- <li>
+								<a href="groom-bride.html" class="fh5co-sub-ddown">Groom &amp; Bride</a>
+								<ul class="fh5co-sub-menu">
+									<li><a href="https://freehtml5.co/wedding-free-html5-bootstrap-template-for-wedding-websites/">Wedding Template</a></li>
+									<li><a href="https://freehtml5.co/marble-free-html5-bootstrap-template-for-portfolio-or-multi-purpose-websites/">Marble Template</a></li>
+									<li><a href="https://freehtml5.co/tasty-free-bootstrap-html5-template-for-restaurant-websites/">Tasty Template</a></li>
+									<li><a href="https://freehtml5.co/education-free-html5-bootstrap-template-elearning-school-websites/">Education Template</a></li>
+									<li><a href="https://freehtml5.co/words-free-html5-bootstrap-template-multi-purpose/">Words Template</a></li>
+								</ul>
+							</li> -->
+							<!-- <li><a href="when-where.html">When &amp; Where</a></li> -->
+							<!-- <li><a href="guest.html">Guest</a></li> -->
+							<li class="active"><a href="gallery.html">Gallery</a></li>
+							<!-- <li><a href="blog.html">Blog</a></li> -->
+						</ul>
+					</nav>
+				</div>
+			</div>
 		</header>
 
 		<!-- end:header-top -->
 
 		<div id="fh5co-gallery">
+
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
@@ -103,17 +127,17 @@
 				<div class="row" id="engagement">
 				</div>
 			</div>
-			
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h2>Wedding</h2>
+						<h2>Matkor</h2>
 					</div>
 				</div>
-				<div class="row" id="wedding">
+				<div class="row" id="matkor">
 				</div>
-
 			</div>
+			
+			
 		</div>
 		
 		<footer>
@@ -133,9 +157,12 @@
 	<script src="assets/js/scripts.min.js"></script>
 	<script type="text/javascript">
 
+		document.addEventListener('contextmenu', event => event.preventDefault()); // Disable right click
+
 		var folders = {};
-		folders["engagement"] = 6;
-		folders["wedding"] = 9;
+		folders["engagement"] = 15;
+		folders["matkor"] = 15;
+		// folders["wedding"] = 9;
 		
 
 
@@ -152,13 +179,15 @@
 			var content = '';
 			for (let index = 1; index <= imageCount; index++) {
 				content = '<div class="col-md-4"><div class="gallery animate-box">';
-				content += '<a class="gallery-img image-popup" href="assets/images/'+folder+'/'+folder+index+'.jpg"><img src="assets/images/'+folder+'/'+folder+index+'.jpg" class="img-responsive" alt="anjaliloveskrishna.github.io"></a>';	
+				content += '<a class="gallery-img image-popup" href="assets/images/'+folder+'/'+folder+'_'+index+'.jpg"><img src="assets/images/'+folder+'/'+folder+'_'+index+'.jpg" class="img-responsive card_image" alt="anjaliloveskrishna.github.io"></a>';	
 				content += '</div></div>';
 				$('#'+folder).append(content);
 			}
 		}
 		
+		
 	</script>
+	
 	</body>
 </html>
 
