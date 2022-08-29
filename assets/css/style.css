@@ -177,7 +177,7 @@ figure {
 
 @media screen and (max-width: 768px) {
   .fh5co-cover {
-    heifght: inherit;
+    height: inherit;
     padding: 3em 0;
   }
 }
@@ -1277,4 +1277,9 @@ figure {
   height: 25rem;
   width: 100%;
   object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-cover {
+    background-image: url(../images/cover_bg_small.jpg)!important;
+  }
 }
