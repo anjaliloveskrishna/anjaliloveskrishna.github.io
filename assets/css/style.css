@@ -1174,7 +1174,7 @@ figure {
 }
 
 .row-bottom-padded-lg {
-  padding-bottom: 7em;
+  padding-bottom: 2em;
 }
 
 @media screen and (max-width: 768px) {
